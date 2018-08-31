@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="XMLHttpRequest 对象XMLHttpRequest 对象用于在后台与服务器交换数据。   在不重新加载页面的情况下更新网页 在页面已加载后从服务器请求数据 在页面已加载后从服务器接收数据 在后台向服务器发送数据   实例化1var request = new XMLHttpRequest(); 发送请求12request.open(GET/POST，&quot;跳转的网页&quot;请求地址的URL,t">
+<meta name="description" content="XMLHttpRequest 对象XMLHttpRequest 对象用于在后台与服务器交换数据。   在不重新加载页面的情况下更新网页 在页面已加载后从服务器请求数据 在页面已加载后从服务器接收数据 在后台向服务器发送数据">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习笔记之AJAX">
 <meta property="og:url" content="http://yoursite.com/2018/08/31/学习笔记之AJAX/index.html">
 <meta property="og:site_name" content="Gourd&#39;blog">
-<meta property="og:description" content="XMLHttpRequest 对象XMLHttpRequest 对象用于在后台与服务器交换数据。   在不重新加载页面的情况下更新网页 在页面已加载后从服务器请求数据 在页面已加载后从服务器接收数据 在后台向服务器发送数据   实例化1var request = new XMLHttpRequest(); 发送请求12request.open(GET/POST，&quot;跳转的网页&quot;请求地址的URL,t">
+<meta property="og:description" content="XMLHttpRequest 对象XMLHttpRequest 对象用于在后台与服务器交换数据。   在不重新加载页面的情况下更新网页 在页面已加载后从服务器请求数据 在页面已加载后从服务器接收数据 在后台向服务器发送数据">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-31T02:27:52.544Z">
+<meta property="og:updated_time" content="2018-08-31T02:46:41.179Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习笔记之AJAX">
-<meta name="twitter:description" content="XMLHttpRequest 对象XMLHttpRequest 对象用于在后台与服务器交换数据。   在不重新加载页面的情况下更新网页 在页面已加载后从服务器请求数据 在页面已加载后从服务器接收数据 在后台向服务器发送数据   实例化1var request = new XMLHttpRequest(); 发送请求12request.open(GET/POST，&quot;跳转的网页&quot;请求地址的URL,t">
+<meta name="twitter:description" content="XMLHttpRequest 对象XMLHttpRequest 对象用于在后台与服务器交换数据。   在不重新加载页面的情况下更新网页 在页面已加载后从服务器请求数据 在页面已加载后从服务器接收数据 在后台向服务器发送数据">
 
 
 
@@ -330,6 +330,7 @@
 <li>在后台向服务器发送数据</li>
 </ul>
 </blockquote>
+<a id="more"></a>
 <h5 id="实例化"><a href="#实例化" class="headerlink" title="实例化"></a>实例化</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> request = <span class="keyword">new</span> XMLHttpRequest();</span><br></pre></td></tr></table></figure>
 <h5 id="发送请求"><a href="#发送请求" class="headerlink" title="发送请求"></a>发送请求</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">request.open(GET/POST，<span class="string">"跳转的网页"</span>请求地址的URL,<span class="literal">true</span>异步/<span class="literal">false</span>同);</span><br><span class="line">request.send();</span><br></pre></td></tr></table></figure>
 <h5 id="取得响应"><a href="#取得响应" class="headerlink" title="取得响应"></a>取得响应</h5><p>responseText          获得字符串数据<br>responseML            获得XML数据<br>status和statusText    以数字和文本形式返回http状态码<br>getAllResponseHeader()  获取所有的响应报头<br>readyState  属性<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> request = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">request.open(<span class="string">"GET"</span>,<span class="string">"xx.php"</span>,<span class="literal">true</span>);</span><br><span class="line">request.send();</span><br><span class="line">request.onreadystatechange = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (request.readyState === <span class="number">4</span> &amp;&amp; request.status === <span class="number">200</span>)&#123;</span><br><span class="line">        <span class="comment">//做一些事情</span></span><br><span class="line">        request.responseText</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
