@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="web前端," />
 
 
 
@@ -79,17 +79,22 @@
 
 
 
-<meta name="description" content="XMLHttpRequest 对象XMLHttpRequest 对象用于在后台与服务器交换数据。   在不重新加载页面的情况下更新网页 在页面已加载后从服务器请求数据 在页面已加载后从服务器接收数据 在后台向服务器发送数据">
+<meta name="description" content="编辑HTML代码时，有时候想在一个大div里面放两个小div，形成左右分栏的布局，但是浮动了一个小div去右边的时候，并没有像预期那样，形成左右两栏的布局，而是第一个小div里面有内容的时候，另一个div会往下移，这是为什么呢？">
+<meta name="keywords" content="web前端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="学习笔记之AJAX">
-<meta property="og:url" content="http://yoursite.com/2018/08/31/学习笔记之AJAX/index.html">
+<meta property="og:title" content="学习笔记之：HTML渲染顺序(左右两栏)">
+<meta property="og:url" content="http://yoursite.com/2018/09/03/leaningNotes3/index.html">
 <meta property="og:site_name" content="Gourd&#39;blog">
-<meta property="og:description" content="XMLHttpRequest 对象XMLHttpRequest 对象用于在后台与服务器交换数据。   在不重新加载页面的情况下更新网页 在页面已加载后从服务器请求数据 在页面已加载后从服务器接收数据 在后台向服务器发送数据">
+<meta property="og:description" content="编辑HTML代码时，有时候想在一个大div里面放两个小div，形成左右分栏的布局，但是浮动了一个小div去右边的时候，并没有像预期那样，形成左右两栏的布局，而是第一个小div里面有内容的时候，另一个div会往下移，这是为什么呢？">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-31T02:46:41.179Z">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006ZXxaqgy1fuwd3osm2ij30c806bt8i.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006ZXxaqgy1fuwd3vn722j30lp05i0su.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006ZXxaqgy1fuwd4blp9ij30bm04pq2q.jpg">
+<meta property="og:updated_time" content="2018-09-05T07:05:40.147Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学习笔记之AJAX">
-<meta name="twitter:description" content="XMLHttpRequest 对象XMLHttpRequest 对象用于在后台与服务器交换数据。   在不重新加载页面的情况下更新网页 在页面已加载后从服务器请求数据 在页面已加载后从服务器接收数据 在后台向服务器发送数据">
+<meta name="twitter:title" content="学习笔记之：HTML渲染顺序(左右两栏)">
+<meta name="twitter:description" content="编辑HTML代码时，有时候想在一个大div里面放两个小div，形成左右分栏的布局，但是浮动了一个小div去右边的时候，并没有像预期那样，形成左右两栏的布局，而是第一个小div里面有内容的时候，另一个div会往下移，这是为什么呢？">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/006ZXxaqgy1fuwd3osm2ij30c806bt8i.jpg">
 
 
 
@@ -119,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/08/31/学习笔记之AJAX/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/03/leaningNotes3/"/>
 
 
 
 
 
-  <title>学习笔记之AJAX | Gourd'blog</title>
+  <title>学习笔记之：HTML渲染顺序(左右两栏) | Gourd'blog</title>
   
 
 
@@ -242,7 +247,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/31/学习笔记之AJAX/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/03/leaningNotes3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Gourd'小葫芦">
@@ -259,7 +264,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">学习笔记之AJAX</h1>
+          <h1 class="post-title" itemprop="name headline">学习笔记之：HTML渲染顺序(左右两栏)</h1>
         
 
         <div class="post-meta">
@@ -271,8 +276,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-31T10:12:47+08:00">
-                2018-08-31
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-03T15:26:19+08:00">
+                2018-09-03
               </time>
             
 
@@ -289,7 +294,7 @@
 
           
           
-             <span id="/2018/08/31/学习笔记之AJAX/" class="leancloud_visitors" data-flag-title="学习笔记之AJAX">
+             <span id="/2018/09/03/leaningNotes3/" class="leancloud_visitors" data-flag-title="学习笔记之：HTML渲染顺序(左右两栏)">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -320,23 +325,26 @@
       
 
       
-        <hr>
-<h4 id="XMLHttpRequest-对象"><a href="#XMLHttpRequest-对象" class="headerlink" title="XMLHttpRequest 对象"></a>XMLHttpRequest 对象</h4><p>XMLHttpRequest 对象用于在后台与服务器交换数据。</p>
-<blockquote>
-<ul>
-<li>在不重新加载页面的情况下更新网页</li>
-<li>在页面已加载后从服务器请求数据</li>
-<li>在页面已加载后从服务器接收数据</li>
-<li>在后台向服务器发送数据</li>
-</ul>
-</blockquote>
+        <p>编辑HTML代码时，有时候想在一个大div里面放两个小div，形成左右分栏的布局，但是浮动了一个小div去右边的时候，并没有像预期那样，形成左右两栏的布局，而是第一个小div里面有内容的时候，另一个div会往下移，这是为什么呢？</p>
 <a id="more"></a>
-<h5 id="实例化"><a href="#实例化" class="headerlink" title="实例化"></a>实例化</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> request = <span class="keyword">new</span> XMLHttpRequest();</span><br></pre></td></tr></table></figure>
-<h5 id="发送请求"><a href="#发送请求" class="headerlink" title="发送请求"></a>发送请求</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">request.open(GET/POST，<span class="string">"跳转的网页"</span>请求地址的URL,<span class="literal">true</span>异步/<span class="literal">false</span>同);</span><br><span class="line">request.send();</span><br></pre></td></tr></table></figure>
-<h5 id="取得响应"><a href="#取得响应" class="headerlink" title="取得响应"></a>取得响应</h5><p>responseText          获得字符串数据<br>responseML            获得XML数据<br>status和statusText    以数字和文本形式返回http状态码<br>getAllResponseHeader()  获取所有的响应报头<br>readyState  属性<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> request = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">request.open(<span class="string">"GET"</span>,<span class="string">"xx.php"</span>,<span class="literal">true</span>);</span><br><span class="line">request.send();</span><br><span class="line">request.onreadystatechange = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (request.readyState === <span class="number">4</span> &amp;&amp; request.status === <span class="number">200</span>)&#123;</span><br><span class="line">        <span class="comment">//做一些事情</span></span><br><span class="line">        request.responseText</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h4 id="异步传输"><a href="#异步传输" class="headerlink" title="异步传输"></a>异步传输</h4><h5 id="小问题"><a href="#小问题" class="headerlink" title="小问题"></a>小问题</h5><p>编辑PHP，向服务器发一个信息，服务器就马上发回来，并完成相应的处理<br>这样就有个问题， 问题就是每次服务器请求完之后如果有动作，比如跳转，<br>浏览器就要加载想要跳转的页面，这就意味着浏览器需要刷新，刷新页面才可以跳转</p>
-<p>ajax的其中一个作用就是不需要Html进行更改，也能接受到服务器发过来的信息<br>所以ajax对服务器发过来的信息在浏览器做了处理</p>
-<p>小提示：<br>有时候往服务器上传文件时有可能会出现 <strong>“ajax error”</strong><br>所以传输过程中数据会丢失，最好压缩再上传</p>
+<p>因为HTML的渲染顺序。</p>
+<hr>
+<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a><strong>问题</strong></h4><ul>
+<li>当需要在一个大div里面包裹着两个div，且左右一个的时候，就会用到浮动。<br>那么按照正常的思路，代码如下列所示：<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>HTML渲染顺序<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">        .box &#123;</span></span><br><span class="line"><span class="undefined">            width: 400px;</span></span><br><span class="line"><span class="undefined">            height: 150px;</span></span><br><span class="line"><span class="undefined">            background: silver;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        .box_left &#123;</span></span><br><span class="line"><span class="undefined">            overflow: hidden;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        .box_right &#123;</span></span><br><span class="line"><span class="undefined">            width: 80px;</span></span><br><span class="line"><span class="undefined">            height: 100%;</span></span><br><span class="line"><span class="undefined">            background: pink;</span></span><br><span class="line"><span class="undefined">            float: right;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box_left"</span>&gt;</span>小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box_right"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>以上代码运行以后的效果图<br><img src="http://ww1.sinaimg.cn/large/006ZXxaqgy1fuwd3osm2ij30c806bt8i.jpg" alt=""></p>
+<p><img src="http://ww1.sinaimg.cn/large/006ZXxaqgy1fuwd3vn722j30lp05i0su.jpg" alt=""></p>
+<ul>
+<li>分析：可以从上图看到box_left占据了一整行，box_right往下移。<ul>
+<li>因为HTML的渲染顺序是<strong>从上往下</strong>的，先渲染box_left，再渲染box_right，因为box_left是块级元素，块级会占满整行。</li>
+<li>所以解决方法就是先把浮动的盒子优先显示</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a><strong>解决方法</strong></h4><p>把需要浮动的盒子box_right优先显示。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>HTML渲染顺序<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">        .box &#123;</span></span><br><span class="line"><span class="undefined">            width: 400px;</span></span><br><span class="line"><span class="undefined">            height: 150px;</span></span><br><span class="line"><span class="undefined">            background: silver;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        .box_left &#123;</span></span><br><span class="line"><span class="undefined">            overflow: hidden;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        .box_right &#123;</span></span><br><span class="line"><span class="undefined">            width: 80px;</span></span><br><span class="line"><span class="undefined">            height: 100%;</span></span><br><span class="line"><span class="undefined">            background: pink;</span></span><br><span class="line"><span class="undefined">            float: right;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box_right"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--浮动的盒子优先显示--&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box_left"</span>&gt;</span></span><br><span class="line">        小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦小葫芦</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="http://ww1.sinaimg.cn/large/006ZXxaqgy1fuwd4blp9ij30bm04pq2q.jpg" alt=""><br>这样子就可以正常显示左右分栏的布局，并且不需要改变太多的代码，就可以实现。</p>
 
       
     </div>
@@ -352,6 +360,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/web前端/" rel="tag"># web前端</a>
+          
+        </div>
+      
 
       
       
@@ -361,14 +375,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/08/31/leaningNotes2/" rel="next" title="学习笔记：上传图片并预览">
+                <i class="fa fa-chevron-left"></i> 学习笔记：上传图片并预览
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/08/31/学习笔记之上传图片并预览/" rel="prev" title="学习笔记之上传图片并预览">
-                学习笔记之上传图片并预览 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/09/04/leaningNotes4/" rel="prev" title="学习笔记：添加数据进表格中，且可进行增删改查">
+                学习笔记：添加数据进表格中，且可进行增删改查 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -496,7 +514,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#XMLHttpRequest-对象"><span class="nav-number">1.</span> <span class="nav-text">XMLHttpRequest 对象</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#实例化"><span class="nav-number">1.1.</span> <span class="nav-text">实例化</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#发送请求"><span class="nav-number">1.2.</span> <span class="nav-text">发送请求</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#取得响应"><span class="nav-number">1.3.</span> <span class="nav-text">取得响应</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#异步传输"><span class="nav-number">2.</span> <span class="nav-text">异步传输</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#小问题"><span class="nav-number">2.1.</span> <span class="nav-text">小问题</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解决方法"><span class="nav-number">2.</span> <span class="nav-text">解决方法</span></a></li></ol></div>
             
 
           </div>
