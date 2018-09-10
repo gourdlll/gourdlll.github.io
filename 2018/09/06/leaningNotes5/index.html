@@ -90,7 +90,7 @@
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/006ZXxaqgy1fuznlmjprmj30y70fq402.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/006ZXxaqgy1fuznmza8e6j30y00fftaa.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/006ZXxaqgy1fuzo8b5kmwj30xl0fgwg1.jpg">
-<meta property="og:updated_time" content="2018-09-06T08:33:55.286Z">
+<meta property="og:updated_time" content="2018-09-10T09:22:02.641Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习笔记：电商购物车结算">
 <meta name="twitter:description" content="电商网站一般都会有购物车，有购物车就需要做结算，在校时没做过这个功能，恰好目前有这个需求，边学习边做购物车结算，一步步总结进步。">
@@ -345,7 +345,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">如果价格需要保留两位小数，可添加以下代码</span><br><span class="line"><span class="comment">//保留两位小数，如： 2，会在后面补上00，既2.00</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">toDecimal2</span>(<span class="params">x</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> f = <span class="built_in">parseFloat</span>(x);</span><br><span class="line">    <span class="comment">//检查是否是非数字值</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">isNaN</span>(f)) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> f = <span class="built_in">Math</span>.round(x*<span class="number">100</span>)/<span class="number">100</span>;</span><br><span class="line">    <span class="keyword">var</span> s = f.toString();</span><br><span class="line">    <span class="keyword">var</span> rs = s.indexOf(<span class="string">'.'</span>);</span><br><span class="line">    <span class="keyword">if</span> (rs &lt; <span class="number">0</span>)&#123;</span><br><span class="line">        rs = s.length;</span><br><span class="line">        s += <span class="string">'.'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(s.length &lt;= rs + <span class="number">2</span>)&#123;</span><br><span class="line">        s += <span class="string">'0'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> s;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><img src="http://ww1.sinaimg.cn/large/006ZXxaqgy1fuzo8b5kmwj30xl0fgwg1.jpg" alt=""><br>功能实现完成。</p>
 <blockquote>
-<p>本文作者： Gourd’小葫芦<br>本文链接： <a href="https://gourdlll.github.io/2018/09/04/leaningNotes5/" target="_blank" rel="noopener">https://gourdlll.github.io/2018/09/04/leaningNotes5/</a><br>版权声明： 本博客所有文章除特别声明外，均采用 CC BY-NC-SA 3.0 许可协议。转载请注明出处，尊重作者的学习成果！</p>
+<p>本文作者： Gourd’小葫芦<br>本文链接： <a href="https://gourdlll.github.io/2018/09/06/leaningNotes5/" target="_blank" rel="noopener">https://gourdlll.github.io/2018/09/06/leaningNotes5/</a><br>版权声明： 本博客所有文章除特别声明外，均采用 CC BY-NC-SA 3.0 许可协议。转载请注明出处，尊重作者的学习成果！</p>
 </blockquote>
 
       
@@ -386,6 +386,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/10/leaningNotes6/" rel="prev" title="leaningNotes6">
+                leaningNotes6 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -466,7 +470,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

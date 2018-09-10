@@ -89,7 +89,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/006ZXxaqgy1fuwd11pyj9j30hm0a1mx3.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/006ZXxaqgy1fuwcws29avj30o90d1qb0.jpg">
-<meta property="og:updated_time" content="2018-09-06T08:28:02.846Z">
+<meta property="og:updated_time" content="2018-09-10T09:23:15.380Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习笔记：上传图片并预览">
 <meta name="twitter:description" content="需求：  上传图片，并且可预览 点击删除按钮可删除图片 上传图片时判断图片是否已存在，已存在则不上传 第一张添加的图片一直在第一个位置，后面陆续添加至后面">
@@ -347,7 +347,7 @@
 <h5 id="移除事件"><a href="#移除事件" class="headerlink" title="移除事件"></a>移除事件</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">//移除已选择的  上传图片2</span><br><span class="line">function removeDetailPic(thisDom, fileName) &#123;</span><br><span class="line">    // 因为要在for循环中移除元素，所以不能正着遍历，要倒序遍历。避免异常。</span><br><span class="line">    for (var i = selectedImgList.length - 1; i &gt;= 0; i--) &#123;</span><br><span class="line">    // 因为前面删除的图片后面的图片会移上去，所以-1</span><br><span class="line">        if (selectedImgList[i].name === fileName) &#123;</span><br><span class="line">            selectedImgList.splice(i, 1);//同样名字 都被移除</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    // 移除显示的图片</span><br><span class="line">    $(thisDom).parent().remove()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//移除已选择的  上传图片1</span><br><span class="line">function removeRovePic(thisDom, fileName) &#123;</span><br><span class="line">    // 因为要在for循环中移除元素，所以不能正着遍历，要倒序遍历。避免异常。</span><br><span class="line">    for (var i = selectedImgList1.length - 1; i &gt;= 0; i--) &#123;</span><br><span class="line">    // 因为前面删除的图片后面的图片会移上去，所以-1</span><br><span class="line">        if (selectedImgList1[i].name === fileName) &#123;</span><br><span class="line">            selectedImgList1.splice(i, 1);//同样名字 都被移除</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    // 移除显示的图片</span><br><span class="line">    $(thisDom).parent().remove()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>实现效果如下图所示：<br><img src="http://ww1.sinaimg.cn/large/006ZXxaqgy1fuwcws29avj30o90d1qb0.jpg" alt=""></p>
 <blockquote>
-<p>本文作者： Gourd’小葫芦<br>本文链接： <a href="https://gourdlll.github.io/2018/09/04/leaningNotes2/" target="_blank" rel="noopener">https://gourdlll.github.io/2018/09/04/leaningNotes2/</a><br>版权声明： 本博客所有文章除特别声明外，均采用 CC BY-NC-SA 3.0 许可协议。转载请注明出处，尊重作者的学习成果！</p>
+<p>本文作者： Gourd’小葫芦<br>本文链接： <a href="https://gourdlll.github.io/2018/08/31/leaningNotes2/" target="_blank" rel="noopener">https://gourdlll.github.io/2018/08/31/leaningNotes2/</a><br>版权声明： 本博客所有文章除特别声明外，均采用 CC BY-NC-SA 3.0 许可协议。转载请注明出处，尊重作者的学习成果！</p>
 </blockquote>
 
       
@@ -472,7 +472,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
